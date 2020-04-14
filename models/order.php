@@ -35,7 +35,7 @@ class Order
         $orders = $con->query('SELECT * FROM orders');
 
         foreach ($orders as $order)
-            $list[] = new Order($order['id'], $order['client_id'], NULL, $order['ord_description'], NULL, NULL);
+            $list[] = new Order($order['id'], $order['client_id'], NULL, $order['ord_description'], NULL, $order['order_date']);
         return $list;
     }
     public function find($id)

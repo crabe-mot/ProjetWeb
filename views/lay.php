@@ -17,12 +17,12 @@
 
 		<!-- Page content -->
 		<div class="content">
-			<h2 class="content-title">Recent Orders</h2>
+			<h2 class="content-title">Nos produits</h2>
 			<hr>
 			<!-- more content still to come here ... -->
 			<?php include(ROOT_PATH . '/includes/navbar-orders.php') ?>
 			<?php require_once('routes/router.php'); ?>
-			
+
 		</div>
 		<!-- // Page content -->
 
