@@ -29,7 +29,7 @@ if(isset($_SESSION["error_pwd"]) && $_SESSION["error_pwd"])
 {
 	echo 'Error : Wrong password confirmation';
 }
-if(isset(password)){
+
 if(password!=password_confirmation)
 {
 	//$_SESSION["error_pwd"]=true;
@@ -40,7 +40,7 @@ else{
 	email ." NULL ". password. " " . address ." ". city ." ". state." " . zip ." ". country . ";");
 	header('location:index.php');
 }
-}
+
 ?>
 
 </body>
