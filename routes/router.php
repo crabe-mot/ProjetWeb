@@ -11,13 +11,18 @@ function routing($controller, $action)
             require_once('models/order.php');
             $myController = new OrdersController();
             break;
+        case 'login':
+
+            $myController = new LoginController();
+            break;
     }
     $myController->{$action}();
 }
 
 $controllers = array(
     'pages' => ['home', 'error'],
-    'orders' => ['index', 'show']
+    'orders' => ['index', 'show'],
+    'login' => ['login','register']
 );
 
 // var_dump($controllers);

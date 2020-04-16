@@ -18,13 +18,13 @@
 		<input type="password" placeholder="Password" name="password"/></br>
 		<input type="password" placeholder="Password Confirmation" name="password_confirmation"/></br>
 		<input type="submit" value="Sign Up"/>
-	</form> 
+	</form>
 </div>
-<? php 
+<? php
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', true);
-include "database/db.php";
-$database = getInstance();
+require_once "database/db.php";
+$database = DBConnect::getInstance();
 if(isset($_SESSION["error_pwd"]) && $_SESSION["error_pwd"])
 {
 	echo 'Error : Wrong password confirmation';
@@ -32,11 +32,13 @@ if(isset($_SESSION["error_pwd"]) && $_SESSION["error_pwd"])
 
 if(password!=password_confirmation)
 {
+    echo('password not equals')
 	//$_SESSION["error_pwd"]=true;
 	header('location:register.php?error_pwd=true';
 }
 else{
-	$database::query("INSERT INTO customer(lastname,firstname,email,role,password,address,city,state,zip,country) VALUES ".lastname . " " . firstname." " . 
+    echo('pwrite in db')
+	$database::query("INSERT INTO customer(lastname,firstname,email,role,password,address,city,state,zip,country) VALUES ".lastname . " " . firstname." " .
 	email ." NULL ". password. " " . address ." ". city ." ". state." " . zip ." ". country . ";");
 	header('location:index.php');
 }
