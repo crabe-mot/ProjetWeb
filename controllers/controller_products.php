@@ -9,6 +9,7 @@
 
         $product = new Product();
         $products=$product->get_all_products();
+        require_once('views/products/index.php');
 
     }
 

@@ -38,20 +38,20 @@ class Product
             $list[] = new Product($product['prodid'], $product['catid'], $product['name'], $product['description'], $product['price'], $product['display']);
         return $list;
     }
-    // public function find($id)
-    // {
-    //     global $con;
-    //     $id = intval($id);
-    //     $req = $con->prepare('SELECT * FROM products where id=:id');
-    //     $req->execute(array('id' => $id));
-    //     $product = $req->fetch();
-    //     return new Product(
-    //         $product['id'],
-    //         $product['cat_id'],
-    //         $product['name'],
-    //         $product['description'],
-    //         $product['price'],
-    //         $product['display']
-    //     );
-    // }
+    public function find($id)
+    {
+        global $con;
+        $id = intval($id);
+        $req = $con->prepare('SELECT * FROM products where prodid=:id');
+        $req->execute(array('id' => $id));
+        $product = $req->fetch();
+        return new Product(
+            $product['prodid'],
+            $product['catid'],
+            $product['name'],
+            $product['description'],
+            $product['price'],
+            $product['display']
+        );
+    }
 }//end class Product
