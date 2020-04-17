@@ -13,7 +13,7 @@ if(!(empty($_POST['lastname']) || empty($_POST['firstname']) || empty($_POST['ad
 ?>
 <html>
 <head>
-	<link rel="stylesheet"  href="css/style.css">
+	<link rel="stylesheet"  href="static/css/public_styling.css">
 </head>
 <body>
 
@@ -30,8 +30,13 @@ if(!(empty($_POST['lastname']) || empty($_POST['firstname']) || empty($_POST['ad
 		<input type="email" placeholder="Email" name="email"/></br>
 		<input type="password" placeholder="Password" name="password"/></br>
 		<input type="password" placeholder="Password Confirmation" name="password_confirmation"/></br>
-		<input type="submit" value="Sign Up"/>
+		<button class="btn" type="submit">Sign Up</button>
 	</form> 
 </div>
+
+<div>
+	<p>Already a member ? <a href="index.php">Sign In</a></p>
+</div>
+
 </body>
 </html>
