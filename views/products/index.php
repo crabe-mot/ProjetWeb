@@ -3,7 +3,7 @@
     <li>
 	<div class="products" style="margin-left: 0px;">
 
-		<a  href="?controller=products&action=show&id=<?= $product->id ?>">
+		<a  href="index.php?controller=products&action=show&id=<?= $product->id ?>">
 			<div class="products_info">
 				<h3><?= $product->name ?></h3>
 				<div class="info">
