@@ -12,7 +12,15 @@
 		<!-- // navbar -->
 
 		<!-- banner -->
-		<?php include(ROOT_PATH . '/includes/banner.php') ?>
+		<?php 
+		if(isset($_SESSION['firstname'])) {
+			echo "<p><b>".$_SESSION['firstname']."  ".$_SESSION['lastname']."</b></p>";
+		}
+		else {
+			include(ROOT_PATH . '/includes/banner.php');
+		}
+		
+		?>
 		<!-- // banner -->
 
 		<!-- Page content -->
