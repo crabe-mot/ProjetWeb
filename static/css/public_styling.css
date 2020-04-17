@@ -15,7 +15,7 @@ body {
   a { text-decoration: none; }
   ul, ol { margin-left: 40px; }
   hr { margin: 10px 0px; opacity: .25; }
-  
+
   /* FORM DEFAULTS */
   form h2 {
       margin: 25px auto;
@@ -79,10 +79,10 @@ body {
       color: #B9E6F2;
       background-color: #334F5C;
   }
-  
+
   /* LOGO */
   .navbar .logo_div {
-    float: left; 
+    float: left;
     padding-top: 5px;
     padding-left: 40px;
 }
@@ -135,7 +135,7 @@ body {
     font-family: 'Noto Serif', serif;
 }
 .banner .welcome_msg p span {
-	font-size: .81em; 
+	font-size: .81em;
 	color: #3E606F;
 }
 .banner .welcome_msg a {
@@ -245,4 +245,15 @@ body {
 .content .order .order_info span.see_details {
 	position: absolute;
 	right: 5px; bottom: 5px;
+}
+
+
+.product-grid {
+    columns: 4;
+    list-style-type: "";
+}
+
+.product-image img {
+    width: 150px;
+    height: auto;
 }
