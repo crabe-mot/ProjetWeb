@@ -8,7 +8,6 @@ if(!(empty($_POST['lastname']) || empty($_POST['firstname']) || empty($_POST['ad
 {
 	$database->getInstance()->query("INSERT INTO customers(lastname,firstname,email,role,password,address,city,state,zip,country) VALUES ('".$_POST['lastname'] . "', '" . $_POST['firstname']."', '" . 
 	$_POST['email'] ."', NULL, '". $_POST['password']. "', '" . $_POST['address'] ."', '". $_POST['city'] ."', '". $_POST['state']."', '" . $_POST['zip'] ."', '". $_POST['country'] . "');");
-	$database->closeInstance();
 	header('location:index.php');
 }
 ?>
@@ -28,7 +27,6 @@ if(!(empty($_POST['lastname']) || empty($_POST['firstname']) || empty($_POST['ad
 		<input type="text" placeholder="State" name="state"/></br>
 		<input type="text" placeholder="Country" name="country"/></br>
 		<input type="text" placeholder="ZIP" name="zip"/></br>
-		<input type="text" placeholder="Username" name="username"/></br>
 		<input type="email" placeholder="Email" name="email"/></br>
 		<input type="password" placeholder="Password" name="password"/></br>
 		<input type="password" placeholder="Password Confirmation" name="password_confirmation"/></br>
@@ -37,4 +35,3 @@ if(!(empty($_POST['lastname']) || empty($_POST['firstname']) || empty($_POST['ad
 </div>
 </body>
 </html>
-
