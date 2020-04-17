@@ -16,8 +16,8 @@
     public function show() {
 
       if (!isset($_GET['id'])) return routing('pages', 'error');
-      $product= new Product();
-      $myproduct=$product->find($_GET['id']);
+      $myproduct= new Product();
+      $product=$myproduct->find($_GET['id']);
       require_once('views/products/show.php');
 
    }

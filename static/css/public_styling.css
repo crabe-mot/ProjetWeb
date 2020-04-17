@@ -253,7 +253,14 @@ body {
     list-style-type: "";
 }
 
-.product-image img {
-    width: 150px;
-    height: auto;
+img.gallery {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+img.standard-size {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
 }

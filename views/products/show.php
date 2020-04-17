@@ -1,8 +1,9 @@
 <div class="products_info">
-    <h3><?= $myproduct->name ?></h3>
-    <div class="info">
-        <p><?= $myproduct->description ?></p>
-        <span>$ <?= $myproduct->price ?></span>
+    <a  class="product-image" href="static/images/<?= $product->image ?>">
+        <img class="standard-size" src="static/images/<?= $product->image ?>" alt="<?= $product->name ?>" title="<?= $product->name ?>">
+    </a>
+    <h2><?= $product->name ?></h3>
+        <p><?= $product->description ?></p>
+        <span>$ <?= $product->price ?></span>
         <span class="see_details">See products details...</span>
-    </div>
 </div>
