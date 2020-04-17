@@ -12,20 +12,20 @@
 		<!-- // navbar -->
 
 		<!-- banner -->
-		<?php 
+		<?php
 		if(isset($_SESSION['firstname'])) {
 			echo "<p><b>".$_SESSION['firstname']."  ".$_SESSION['lastname']."</b></p>";
 		}
 		else {
 			include(ROOT_PATH . '/includes/banner.php');
 		}
-		
+
 		?>
 		<!-- // banner -->
 
 		<!-- Page content -->
 		<div class="content">
-			<h2 class="content-title">Nos produits</h2>
+			<h2 class="content-title">Content title</h2>
 			<hr>
 			<!-- more content still to come here ... -->
 			<?php include(ROOT_PATH . '/includes/navbar-orders.php') ?>
