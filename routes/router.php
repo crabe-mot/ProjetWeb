@@ -18,7 +18,7 @@ function routing($controller, $action)
 $controllers = array(
     'pages' => ['home', 'error'],
     'orders' => ['index', 'show']
-
+);
 // var_dump($controllers);
 if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {

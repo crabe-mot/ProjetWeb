@@ -7,8 +7,12 @@ class PagesController
 
     public function home()
     {
-        
+        require_once('models/product.php');
+
+        $product = new Product();
+        $products=$product->get_all_products();
         require_once('views/pages/home.php');
+
     }
     public function error()
     {
