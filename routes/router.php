@@ -29,7 +29,7 @@ if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {
         routing($controller, $action);
     } else {
-        routing('pages', 'home');
+        routing('products', 'index');
     }
 } else {
     routing('pages', 'error');

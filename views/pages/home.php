@@ -1,2 +1,3 @@
-<?
-require_once ('views/products/index');
+<div>
+
+</div>

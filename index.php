@@ -7,7 +7,7 @@ if(!empty($_POST['username']) && !empty($_POST['password'])) {
 	  $sth = $database->getInstance()->prepare($sql);
 	  $sth->execute();
 	  $result = $sth->fetchColumn();
-	  
+
 	  if(empty($result))
 		  echo 'erreur mot de passe';
 
@@ -21,8 +21,8 @@ if(!empty($_POST['username']) && !empty($_POST['password'])) {
    $action=$_GET['action'];
 
   } else {
-   $controller='pages';
-   $action='home';
+   $controller='products';
+   $action='index';
   }
 
   //echo 'hello';
