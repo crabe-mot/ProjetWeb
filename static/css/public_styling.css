@@ -264,3 +264,7 @@ img.standard-size {
     width: 400px;
     height: 400px;
 }
+
+.column {
+    display: inline-block;
+}
